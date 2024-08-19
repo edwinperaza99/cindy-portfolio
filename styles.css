@@ -68,12 +68,40 @@ nav {
 
 /* styles for navbar */
 .navbar {
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background: #333333;
+	/* background: #333333; */
 	gap: 1rem;
+	background: rgba(255, 255, 255, 0.13);
+	/* border-radius: 16px; */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.navbar a {
+	color: white;
+	padding: 1rem;
+}
+
+.navbar a:hover {
+	color: #4a89ff;
+}
+
+/* media queries for navbar */
+@media (max-width: 768px) {
+	.navbar {
+		padding: 10px;
+		gap: 0.5rem;
+	}
+	.navbar a {
+		padding: 0.5rem;
+		font-size: 0.8rem;
+	}
 }
 
 #hero {
@@ -84,6 +112,8 @@ nav {
 	gap: 2rem;
 	max-width: 600px;
 	margin: 0 auto;
+	min-height: calc(100vh - 70px);
+	/* padding: 40px 0; */
 }
 
 #hero p {
@@ -123,18 +153,17 @@ nav {
 
 .logo {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 }
 
 /* styles for background video  */
-/* styles.css */
 body,
 html {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .video-background {
