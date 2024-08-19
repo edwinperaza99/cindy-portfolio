@@ -1,0 +1,168 @@
+/* import fonts   */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Reset default margin and padding for all elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* Set a base font size and family */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "IBM Plex Mono", monospace;
+	/* padding-top: 80px; */
+	background: #333333;
+}
+
+/* Apply a responsive max-width to the main content */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Style headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+	font-family: "Source Sans Pro", monospace;
+	/* font-family: "Bungee", sans-serif; */
+}
+
+p {
+	/* color: white; */
+	/* off white */
+	color: #f5f5f5;
+}
+/* Basic link styles */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* styles for navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background: #333333;
+	gap: 1rem;
+}
+
+#hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#hero p {
+	text-align: center;
+}
+
+#hero button {
+	background: #f5f5f5;
+	color: #333333;
+	padding: 10px 20px;
+	border: solid 1px #f5f5f5;
+	border-radius: 5px;
+}
+
+#hero button:hover {
+	background: #333333;
+	color: #f5f5f5;
+}
+
+.button-list {
+	display: flex;
+	gap: 1rem;
+}
+
+.button-list a {
+	background: #f5f5f5;
+	color: #333333;
+	padding: 10px 20px;
+	border: solid 1px #f5f5f5;
+	border-radius: 5px;
+}
+
+.button-list a:hover {
+	background: #333333;
+	color: #f5f5f5;
+}
+
+.logo {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+/* styles for background video  */
+/* styles.css */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#background-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+}
+
+.content {
+	position: relative;
+	z-index: 1;
+	/* color: white; */
+	/* text-align: center; */
+	/* padding: 20px; */
+}
