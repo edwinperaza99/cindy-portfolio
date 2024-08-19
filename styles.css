@@ -209,7 +209,7 @@ html {
 
 .experience-card {
 	background: lightblue;
-	color: white;
+	color: rgb(69, 69, 69);
 	padding: 20px;
 	border-radius: 10px;
 	min-width: 600px;
